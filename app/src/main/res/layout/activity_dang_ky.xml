@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
     tools:context="com.example.dangn.oderfoodbyme.DangKyActivity">
 
     <TextView
@@ -23,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:background="@drawable/custom_button_simple"
         android:id="@+id/editTextHoTen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewDangKy" />
 
     <EditText
+        android:background="@drawable/custom_button_simple"
         android:id="@+id/editTextTenDangNhapDK"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -53,6 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextHoTen" />
 
     <EditText
+        android:background="@drawable/custom_button_simple"
         android:id="@+id/editTextPassWordDK"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -69,11 +73,12 @@
 
     <Button
         android:id="@+id/buttonDangKyDK"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
+        android:layout_width="199dp"
+        android:layout_height="61dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="60dp"
+        android:background="@drawable/custom_button"
         android:text="Đăng Ký"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

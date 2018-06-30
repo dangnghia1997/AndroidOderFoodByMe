@@ -19,8 +19,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".DangKyActivity" />
-        <activity android:name=".HanhChinhActivity"></activity>
+        <activity android:name=".HanhChinhActivity" />
         <activity android:name=".BanAdapter" />
+        <activity android:name=".LoaiThucUongActivity" />
+        <activity android:name=".ThucUongTheoMaLoaiActivity" />
+        <activity android:name=".DanhSachChuaThanhToanActivity"></activity>
     </application>
 
 </manifest>

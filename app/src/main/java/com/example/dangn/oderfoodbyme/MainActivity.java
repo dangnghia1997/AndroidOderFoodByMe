@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    String UrlUser="http://192.168.200.137:81/android_oderfood/check_dang_nhap.php";
+    String UrlUser="http://192.168.1.29:81/android_oderfood/check_dang_nhap.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstrainlayoutThucUongTheoMa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/imageViewThucUong"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/dau_da_xay"
+         />
+
+    <TextView
+        android:padding="2dp"
+        android:layout_below="@+id/imageViewThucUong"
+        android:id="@+id/textViewTenThucUong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên Thức Uống"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+
+        android:padding="2dp"
+        android:layout_below="@id/textViewTenThucUong"
+        android:id="@+id/textViewGiaThucUong"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Giá"
+        android:textAlignment="viewStart"
+         />
+
+    <EditText
+        android:id="@+id/editTextSoLuongThucUong"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGiaThucUong"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <ImageView
+
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageViewThucUong"
+        android:id="@+id/imageViewChonMon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="?android:attr/actionModePasteDrawable"
+        />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/imageViewThucUong"
+        android:id="@+id/textViewthehienmaban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewTenThucUong"
+        android:layout_marginBottom="19dp"
+        android:layout_toEndOf="@+id/textViewTenThucUong"
+        android:text="TextView"
+        android:textSize="6sp" />
+
+</RelativeLayout>

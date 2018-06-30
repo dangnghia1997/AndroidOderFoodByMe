@@ -42,8 +42,8 @@ public class HanhChinhActivity extends AppCompatActivity implements  NavigationV
     GridView gvBan;
     ArrayList<Ban> arrayBan;
     BanAdapter banAdapter;
-    String urlDsBan="http://192.168.200.137:81/android_oderfood/Doc_ban.php";
-    String urlThemBan="http://192.168.200.137:81/android_oderfood/Them_ban.php";
+    String urlDsBan="http://192.168.1.29:81/android_oderfood/Doc_ban.php";
+    String urlThemBan="http://192.168.1.29:81/android_oderfood/Them_ban.php";
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
     @Override
@@ -173,11 +173,10 @@ public class HanhChinhActivity extends AppCompatActivity implements  NavigationV
             case R.id.home:
                 Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.thuc_don:
-                Toast.makeText(this, "Thực Đơn", Toast.LENGTH_SHORT).show();
-                break;
+
             case  R.id.dsban:
-                Toast.makeText(this, "Danh sách bàn", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Danh sách bàn", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(HanhChinhActivity.this,DanhSachChuaThanhToanActivity.class));
                 break;
         }
         return false;

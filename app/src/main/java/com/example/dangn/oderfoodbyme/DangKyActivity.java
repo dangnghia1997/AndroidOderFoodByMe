@@ -26,7 +26,7 @@ public class DangKyActivity extends AppCompatActivity {
     EditText edtHoTen,edtTenDangNhap,edtPass;
     Button btnDangKy;
 
-    String urlThemTaiKhoan="http://192.168.200.137:81/android_oderfood/them_user.php";
+    String urlThemTaiKhoan="http://192.168.1.29:81/android_oderfood/them_user.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

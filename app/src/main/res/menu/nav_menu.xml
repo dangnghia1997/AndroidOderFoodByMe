@@ -3,11 +3,7 @@
     <item android:title="HOME" android:id="@+id/home">
     </item>
 
-
-    <item android:title="Thực Đơn"
-        android:id="@+id/thuc_don">
-    </item>
-    <item android:title="Ds Bàn"
+    <item android:title="Danh Sách Bàn Chưa Thanh Toán"
         android:id="@+id/dsban">
 
     </item>

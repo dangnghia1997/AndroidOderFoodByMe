@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,7 @@ public class BanAdapter extends BaseAdapter{
     private Context context;
     private  int layout;
     private List<Ban> BanList;
-    public String urlXoaBan="http://192.168.200.137:81/android_oderfood/Xoa_ban.php";
+    public String urlXoaBan="http://192.168.1.29:81/android_oderfood/Xoa_ban.php";
 
     public BanAdapter(Context context, int layout, List<Ban> banList) {
         this.context = context;
@@ -103,6 +104,20 @@ public class BanAdapter extends BaseAdapter{
 
 
                 return false;
+            }
+        });
+
+        imghinh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(context, "Loại "+ban.getIdBan(), Toast.LENGTH_SHORT).show();
+                //Send data qua intent
+                Intent intent=new Intent(context,LoaiThucUongActivity.class);
+                Bundle bundle= new Bundle();   //Khởi tạo gói hàng
+                bundle.putString("ma_ban",String.valueOf(ban.getIdBan()));  //Đặt tên cho từng món hàng
+                bundle.putString("ten_ban",ban.getTenBan());
+                intent.putExtra("dulieucuaban",bundle);
+                context.startActivity(intent);
             }
         });
 
